@@ -59,7 +59,7 @@ const Home = ({
                 marginTop: "min(-40px, calc(-40px * (100vw/1920)))" 
               }}
             >
-              Services
+              Service
             </Link>
             <Link to="/contact" 
               className="text-[180px] font-light leading-none w-full transition-colors duration-300 hover:text-[#dee13e] -mt-[20px] pl-55"
