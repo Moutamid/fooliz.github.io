@@ -1,0 +1,65 @@
+/* Hide scrollbar but keep functionality */
+.slider, .mobile-slider {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.slider::-webkit-scrollbar, .mobile-slider::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+/* Animation for desktop continuous horizontal scrolling */
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-295px * 4 - 24px * 4)); /* Width of 4 cards + gaps */
+  }
+}
+
+/* Animation for mobile continuous vertical scrolling */
+@keyframes scrollVertical {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-240px * 2 - 24px * 2)); /* Height of 2 rows + gaps */
+  }
+}
+
+.infinite-scroll-wrapper {
+  display: flex;
+  width: max-content;
+}
+
+.mobile-infinite-scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+}
+
+.mobile-row {
+  display: flex;
+  width: max-content;
+}
+
+.auto-scrolling {
+  animation: scroll 20s linear infinite;
+}
+
+.mobile-auto-scrolling {
+  animation: scrollVertical 15s linear infinite;
+}
+
+/* Pause animation on hover/interaction */
+.paused {
+  animation-play-state: paused;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .mobile-row {
+      padding-right: 80px; /* Add space at the end of the row for better scrolling */
+  }
+}
