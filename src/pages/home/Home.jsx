@@ -80,7 +80,7 @@ const Home = ({
                 marginTop: "min(-20px, calc(-20px * (100vw/1920)))" 
               }}
             >
-              Our Clients
+              Our Client
             </Link>
             <Link 
               to="/story"
