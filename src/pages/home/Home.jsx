@@ -48,7 +48,7 @@ const Home = ({
                 marginTop: "min(-85px, calc(-85px * (100vw/1920)))" 
               }}
             >
-              Works
+              Work
             </Link>
             <Link
               to="/services" 
