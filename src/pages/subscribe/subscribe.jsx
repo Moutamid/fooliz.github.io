@@ -214,12 +214,7 @@ const Home = () => {
           {" "}
           {/* Added margin-top for spacing */}
           <p className="md:text-[22px] text-xl font-[Poppins] font-normal leading-[30px] tracking-[1px]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
-            printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply
-            dummy text of the printing and typesetting industry. Lorem
-            Ipsumdummy text of the printing and typesetting industry. dummy text
-            of the printing and typesetting industry.dewrwin
+          At Fooliz, we offer monthly plans for your app development needs. The Basic Plan includes an Android developer and a project manager working 4 hours daily for small tasks. The Medium Plan adds a designer, with both working 6 hours daily for complex projects. The Premium Plan offers a full team—two developers, a designer, a social media manager, and a project manager—working 8 hours daily for a complete solution. In the Single Payment plan, we will provide a custom quote and timeline. All plans offer maintenance, and optional weekend work at an hourly rate. Please choose from below and let us know.
           </p>
         </div>
       </div>
