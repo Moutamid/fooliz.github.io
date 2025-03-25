@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import vectorIcon from "../../assets/Group 55.svg";
+import RadioGif from "../../assets/radio.gif";
 import { database } from "../../firebase"; // Import your Firebase Realtime Database configuration
 import { ref, set, push, serverTimestamp } from "firebase/database";
 import { Link } from 'react-router-dom';
@@ -111,7 +112,7 @@ const ContactPage = () => {
   <img
     className="w-60 h-[200px] md:w-64 md:h-[350px] lg:w-80 lg:h-[500px] md:mt-16 object-contain"
     src="https://s3-alpha-sig.figma.com/img/5092/9fd8/cf65f91df9f176a93f556878108115f9?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=KY92W7nzsxH3hnnf0DSKksxmBAcip6ngnhtH~-NAKi9ch4lHcu2IwiM4fPJOnAfEFpzayqveoda~CKTc13X9Sv3TXw65Fg74A0yIm9CsIuvyH37trAHF-OY6zg~YYnowS4UzcK7IHK-jTpYH67~bkJOAI33SUnErn2thMvNzi0tU9BMUgo2EeJZn2W1Stevp7V33Lk3Lr0qIMkqn9NaiTQidFNJ8ps4xapz3bKDWPODs9WwrSMZzp-UDpFmI3xmbHLNwwUM-Fq~-m-Aa0LBuJfXfIhX6dfDVvTXCobza~K9qGCzvLFey7YCphJ1JTNAVepU8dQ~QyvcjZB6u3Gtbfw__"
-    alt="Animation"
+    alt={RadioGif}
   />
 </div>
 
