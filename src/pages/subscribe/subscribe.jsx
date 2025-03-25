@@ -2,9 +2,21 @@ import React, { useState } from "react";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import { FaChevronDown, FaChevronUp, FaCheck, FaTimes } from "react-icons/fa";
-import vectorIcon from "../../assets/Vector.svg"; // Adjust the path as needed
-import tickIcon from "../../assets/number.svg"; // Adjust the path as needed
-import naIcon from "../../assets/na.svg"; // Adjust the path as needed
+import vectorIcon from "../../assets/Vector.svg";
+import tickIcon from "../../assets/Vector.svg";
+import naIcon from "../../assets/na.svg";
+
+import number0 from "../../assets/number0.svg";
+import number1 from "../../assets/number1.svg";
+import number2 from "../../assets/number2.svg";
+import number3 from "../../assets/number3.svg";
+import number4 from "../../assets/number4.svg";
+import number5 from "../../assets/number5.svg";
+import number6 from "../../assets/number6.svg";
+import number7 from "../../assets/number7.svg";
+import number8 from "../../assets/number8.svg";
+import number9 from "../../assets/number9.svg";
+
 import { Link } from 'react-router-dom';
 
 import Basic from "../../assets/basic.svg";
@@ -83,21 +95,20 @@ const Home = () => {
     { label: "Ongoing App Maintenance", key: "maintenance", icon: true },
     { label: "Free Cancellation?", key: "cancel", icon: true },
   ];
-
+  // {
+  //   question: "What is included in each subscription package?",
+  //   answer: `
+  //      Basic Subscription Package: Includes 1 Android Developer working 4 hours daily and a Project Manager (Available always).
+  //      Medium Subscription Package: Includes 1 Android Developer, 1 Creative Designer (both working 6 hours daily), and a Project Manager (Available always).
+  //      Premium Subscription Package: Includes 2 Android developers, 1 Creative Designer, 1 Social Media Manager, and a Project Manager, all working 8 hours daily.
+  //      Single Payment: Tailored to your specific requirements with a one-time project completion quote based on cost and time. Additional requests not initially agreed upon will be charged extra.
+  //   `,
+  // },
   const faqs = [
-    {
-      question: "What is included in each subscription package?",
-      answer: `
-         Basic Subscription Package: Includes 1 Android Developer working 4 hours daily and a Project Manager (Available always).
-         Medium Subscription Package: Includes 1 Android Developer, 1 Creative Designer (both working 6 hours daily), and a Project Manager (Available always).
-         Premium Subscription Package: Includes 2 Android developers, 1 Creative Designer, 1 Social Media Manager, and a Project Manager, all working 8 hours daily.
-         Single Payment: Tailored to your specific requirements with a one-time project completion quote based on cost and time. Additional requests not initially agreed upon will be charged extra.
-      `,
-    },
     {
       question: "Are there discounts for long-term subscriptions?",
       answer:
-        "Yes, we offer 5% and 10% discounts for clients who commit to 6-month or 12-month subscriptions.",
+        "Yes, we offer 5% and 10% discounts for clients who commit to 6-month or 12-month subscriptions",
     },
     {
       question: "Are weekends included in the subscription plans?",
@@ -121,12 +132,12 @@ const Home = () => {
     {
       question: "What are the hourly rates for weekend work?",
       answer:
-        "Hourly rate for weekend work of Developer ($10/hr), Designer ($5/hr), Social Media Manager ($5/hr).",
+        "Hourly rate for weekend work of Developer (10$/hr), Designer (5$/hr), Social Media Manager (5$/hr).",
     },
     {
       question: "Will my project be maintained as part of the subscription?",
       answer:
-        "Yes, maintenance is included in all subscription plans. We will ensure your app is updated and functional.",
+        "Yes, maintenance is included in all subscription plans. We will ensure your app is updated and functional",
     },
     {
       question: "How long does it take to get started after signing up?",
@@ -192,7 +203,7 @@ const Home = () => {
     },
   ];
 
-  const features = ["Daily Working Hours", "Ayein", "Ayein", "Ayein", "Ayein"];
+  const features = ["Daily Hours", "Android Developer", "Creative Designer", "Project Manager", "Socials Manager", "Weekend rate/hr", "Maintenance", "Free Cancellation"];
   const plans = ["Basic", "Standard", "Premium", "Custom"];
 
   // Render check icons for comparison table
@@ -210,11 +221,11 @@ const Home = () => {
             Find the Right Plan
           </p>
         </div>
-        <div className="w-full md:max-w-[80%] mt-30">
+        <div className="w-full md:max-w-[80%] mt-5 md:mt-25">
           {" "}
           {/* Added margin-top for spacing */}
           <p className="md:text-[22px] text-xl font-[Poppins] font-normal leading-[30px] tracking-[1px]">
-          At Fooliz, we offer monthly plans for your app development needs. The Basic Plan includes an Android developer and a project manager working 4 hours daily for small tasks. The Medium Plan adds a designer, with both working 6 hours daily for complex projects. The Premium Plan offers a full team—two developers, a designer, a social media manager, and a project manager—working 8 hours daily for a complete solution. In the Single Payment plan, we will provide a custom quote and timeline. All plans offer maintenance, and optional weekend work at an hourly rate. Please choose from below and let us know.
+            At Fooliz, we offer monthly plans for your app development needs. All plans offer maintenance, and optional weekend work at an hourly rate. Please choose from below and let us know.
           </p>
         </div>
       </div>
@@ -265,9 +276,14 @@ const Home = () => {
 
               {/* Third div - WhatsApp link with dynamic text parameter */}
               <Link
-                to={`https://api.whatsapp.com/send?phone=923315829371&text=${
-                  index + 1
-                }`}
+                to={`https://api.whatsapp.com/send?phone=971567257157&text=${index === 0
+                    ? "Hi, I want the Basic Plan"
+                    : index === 1
+                      ? "Hi, I want the Standard Plan"
+                      : index === 2
+                        ? "Hi, I want the Premium Plan"
+                        : "Hi, I want the Single Plan"
+                  }`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="absolute bottom-0 left-0 w-full h-1/6 z-10 cursor-pointer"
@@ -323,9 +339,14 @@ const Home = () => {
 
               {/* Third div - WhatsApp link with dynamic text parameter */}
               <Link
-                to={`https://api.whatsapp.com/send?phone=923315829371&text=${
-                  index + 1
-                }`}
+                to={`https://api.whatsapp.com/send?phone=971567257157&text=${index === 0
+                    ? "Hi, I want the Basic Plan"
+                    : index === 1
+                      ? "Hi, I want the Standard Plan"
+                      : index === 2
+                        ? "Hi, I want the Premium Plan"
+                        : "Hi, I want the Single Plan"
+                  }`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="absolute bottom-0 left-0 w-full h-1/6 z-10 cursor-pointer"
@@ -346,119 +367,158 @@ const Home = () => {
         </h2>
 
         {/* Mobile View - Only visible on small screens */}
-<div className="block md:hidden w-full max-w-sm overflow-x-auto">
-  <div className="grid grid-cols-5 items-start pb-4">
-    {/* Feature Column - Mobile */}
-    <div className="bg-black text-white rounded-xl w-40 ml-3 p-3 h-64 flex flex-col relative col-span-1">
-      <h3 className="text-lg tracking-wide font-semi-bold bg-white text-center text-black absolute top-0 left-0 right-0 py-1 rounded-t-xl">
-        Plans
-      </h3>
-      <ul className="mt-10 text-center space-y-4 flex-grow">
-        <li className="text-xs font-[Poppins] font-semibold">Ayein</li>
-        <li className="text-xs font-[Poppins] font-semibold">Ayein</li>
-        <li className="text-xs font-[Poppins] font-semibold">Ayein</li>
-        <li className="text-xs font-[Poppins] font-semibold">Ayein</li>
-        <li className="text-xs font-[Poppins] font-semibold">Ayein</li>
-      </ul>
-    </div>
+        <div className="block md:hidden w-full max-w-sm overflow-x-auto">
+          <div className="grid grid-cols-5 items-start pb-4">
+            {/* Feature Column - Mobile */}
+            <div className="bg-black text-white rounded-xl w-40 ml-3 p-3 h-78 flex flex-col relative col-span-1">
+              <h3 className="text-lg tracking-wide font-semi-bold bg-white text-center text-black absolute top-0 left-0 right-0 py-1 rounded-t-xl">
+                Plans
+              </h3>
+              <ul className="mt-10 text-center space-y-4 flex-grow">
+                <li className="text-xs font-[Poppins] font-semibold">Daily Working Hours</li>
+                <li className="text-xs font-[Poppins] font-semibold">Android Developer(s)</li>
+                <li className="text-xs font-[Poppins] font-semibold">Creative Designer(s)</li>
+                <li className="text-xs font-[Poppins] font-semibold">Project Manager</li>
+                <li className="text-xs font-[Poppins] font-semibold">Social Media Manager</li>
+                <li className="text-xs font-[Poppins] font-semibold">Weekend Hourly Rate</li>
+                <li className="text-xs font-[Poppins] font-semibold">Maintenance</li>
+                <li className="text-xs font-[Poppins] font-semibold">Free Cancellation</li>
+              </ul>
+            </div>
 
-    {/* Basic Plan */}
-    <div className="text-center w-16 ml-22 h-64 flex flex-col col-span-1">
-      <h3 className="text-lg font-semi-bold mb-2 px-1 leading-tight">
-        Basic
-      </h3>
-      <ul className="space-y-4 mt-2">
-        <li>
-          <img src={vectorIcon} alt="Number" className="w-4 h-4 inline mt-[10px]" /> 
-        </li>
-        <li>
-          <img src={tickIcon} alt="Number" className="w-4 h-4 inline mt-[-6px]" /> 
-        </li>
-        <li>
-          <img src={tickIcon} alt="Tick" className="w-4 h-4 inline mt-[-15px]" />
-        </li>
-        <li>
-          <img src={vectorIcon} alt="Number" className="w-4 h-4 inline mt-[-36px]" /> 
-        </li>
-        <li>
-          <img src={naIcon} alt="N/A" className="w-4 h-4 inline mt-[-50px]" />
-        </li>
-      </ul>
-    </div>
+            {/* Basic Plan */}
+            <div className="text-center w-16 ml-22 h-64 flex flex-col col-span-1">
+              <h3 className="text-lg font-semi-bold mb-2 px-1 leading-tight">
+                Basic
+              </h3>
+              <ul className="space-y-4 mt-2">
+                <li>
+                  <img src={number4} alt="Number" className="w-4 h-4 inline mt-[10px]" />
+                </li>
+                <li>
+                  <img src={number1} alt="Number" className="w-4 h-4 inline mt-[-6px]" />
+                </li>
+                <li>
+                  <img src={number0} alt="Number" className="w-4 h-4 inline mt-[-20px]" />
+                </li>
+                <li>
+                  <img src={number1} alt="Number" className="w-4 h-4 inline mt-[-36px]" />
+                </li>
+                <li>
+                  <img src={number0} alt="Number" className="w-4 h-4 inline mt-[-50px]" />
+                </li>
+                <li>
+                  <img src={number3} alt="Number" className="w-4 h-4 inline mt-[-68px]" />
+                </li>
+                <li>
+                  <img src={tickIcon} alt="Number" className="w-4 h-4 inline mt-[-83px]" />
+                </li>
+                <li>
+                  <img src={tickIcon} alt="Number" className="w-4 h-4 inline mt-[-98px]" />
+                </li>
+              </ul>
+            </div>
 
-    {/* Standard Plan */}
-    <div className="text-center w-16 ml-14 h-64 flex flex-col col-span-1">
-      <h3 className="text-lg font-semi-bold mb-2 px-1 leading-tight">
-        Standard
-      </h3>
-      <ul className="space-y-4 mt-2">
-      <li>
-          <img src={vectorIcon} alt="Number" className="w-4 h-4 inline mt-[10px]" /> 
-        </li>
-        <li>
-          <img src={tickIcon} alt="Number" className="w-4 h-4 inline mt-[-6px]" /> 
-        </li>
-        <li>
-          <img src={tickIcon} alt="Tick" className="w-4 h-4 inline mt-[-15px]" />
-        </li>
-        <li>
-          <img src={vectorIcon} alt="Number" className="w-4 h-4 inline mt-[-36px]" /> 
-        </li>
-        <li>
-          <img src={naIcon} alt="N/A" className="w-4 h-4 inline mt-[-50px]" />
-        </li>
-      </ul>
-    </div>
+            {/* Standard Plan */}
+            <div className="text-center w-16 ml-14 h-64 flex flex-col col-span-1">
+              <h3 className="text-lg font-semi-bold mb-2 px-1 leading-tight">
+                Standard
+              </h3>
+              <ul className="space-y-4 mt-2">
+                <li>
+                  <img src={number6} alt="Number" className="w-4 h-4 inline mt-[7px]" />
+                </li>
+                <li>
+                  <img src={number1} alt="Number" className="w-4 h-4 inline mt-[-3px]" />
+                </li>
+                <li>
+                  <img src={number1} alt="Tick" className="w-4 h-4 inline mt-[-18px]" />
+                </li>
+                <li>
+                  <img src={number1} alt="Number" className="w-4 h-4 inline mt-[-33px]" />
+                </li>
+                <li>
+                  <img src={number0} alt="N/A" className="w-4 h-4 inline mt-[-48px]" />
+                </li>
+                <li>
+                  <img src={number4} alt="Tick" className="w-4 h-4 inline mt-[-65px]" />
+                </li>
+                <li>
+                  <img src={tickIcon} alt="Number" className="w-4 h-4 inline mt-[-80px]" />
+                </li>
+                <li>
+                  <img src={tickIcon} alt="N/A" className="w-4 h-4 inline mt-[-95px]" />
+                </li>
+              </ul>
+            </div>
 
-    {/* Premium Plan */}
-    <div className="text-center w-16 ml-8 h-64 flex flex-col col-span-1">
-      <h3 className="text-lg font-semi-bold mb-2 px-1 leading-tight">
-        Premium
-      </h3>
-      <ul className="space-y-4 mt-2">
-      <li>
-          <img src={vectorIcon} alt="Number" className="w-4 h-4 inline mt-[10px]" /> 
-        </li>
-        <li>
-          <img src={tickIcon} alt="Number" className="w-4 h-4 inline mt-[-6px]" /> 
-        </li>
-        <li>
-          <img src={tickIcon} alt="Tick" className="w-4 h-4 inline mt-[-15px]" />
-        </li>
-        <li>
-          <img src={vectorIcon} alt="Number" className="w-4 h-4 inline mt-[-36px]" /> 
-        </li>
-        <li>
-          <img src={naIcon} alt="N/A" className="w-4 h-4 inline mt-[-50px]" />
-        </li>
-      </ul>
-    </div>
+            {/* Premium Plan */}
+            <div className="text-center w-16 ml-8 h-64 flex flex-col col-span-1">
+              <h3 className="text-lg font-semi-bold mb-2 px-1 leading-tight">
+                Premium
+              </h3>
+              <ul className="space-y-4 mt-2">
+                <li>
+                  <img src={number8} alt="Number" className="w-4 h-4 inline mt-[7px]" />
+                </li>
+                <li>
+                  <img src={number2} alt="Number" className="w-4 h-4 inline mt-[-3px]" />
+                </li>
+                <li>
+                  <img src={number2} alt="Tick" className="w-4 h-4 inline mt-[-18px]" />
+                </li>
+                <li>
+                  <img src={number1} alt="Number" className="w-4 h-4 inline mt-[-33px]" />
+                </li>
+                <li>
+                  <img src={number1} alt="N/A" className="w-4 h-4 inline mt-[-48px]" />
+                </li>
+                <li>
+                  <img src={number5} alt="Tick" className="w-4 h-4 inline mt-[-63px]" />
+                </li>
+                <li>
+                  <img src={tickIcon} alt="Number" className="w-4 h-4 inline mt-[-80px]" />
+                </li>
+                <li>
+                  <img src={tickIcon} alt="N/A" className="w-4 h-4 inline mt-[-96px]" />
+                </li>
+              </ul>
+            </div>
 
-    {/* Custom Plan */}
-    <div className="text-center w-16 ml-2 h-64 flex flex-col col-span-1">
-      <h3 className="text-lg font-semi-bold mb-2 px-1 leading-tight">
-        Custom
-      </h3>
-      <ul className="space-y-4 mt-2">
-      <li>
-          <img src={vectorIcon} alt="Number" className="w-4 h-4 inline mt-[10px]" /> 
-        </li>
-        <li>
-          <img src={tickIcon} alt="Number" className="w-4 h-4 inline mt-[-6px]" /> 
-        </li>
-        <li>
-          <img src={tickIcon} alt="Tick" className="w-4 h-4 inline mt-[-15px]" />
-        </li>
-        <li>
-          <img src={vectorIcon} alt="Number" className="w-4 h-4 inline mt-[-36px]" /> 
-        </li>
-        <li>
-          <img src={naIcon} alt="N/A" className="w-4 h-4 inline mt-[-50px]" />
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+            {/* Custom Plan */}
+            <div className="text-center w-16 ml-2 h-64 flex flex-col col-span-1">
+              <h3 className="text-lg font-semi-bold mb-2 px-1 leading-tight">
+                Custom
+              </h3>
+              <ul className="space-y-4 mt-2">
+                <li>
+                  <img src={number8} alt="Number" className="w-4 h-4 inline mt-[7px]" />
+                </li>
+                <li>
+                  <img src={number1} alt="Number" className="w-4 h-4 inline mt-[-3px]" />
+                </li>
+                <li>
+                  <img src={number1} alt="Tick" className="w-4 h-4 inline mt-[-18px]" />
+                </li>
+                <li>
+                  <img src={number1} alt="Number" className="w-4 h-4 inline mt-[-33px]" />
+                </li>
+                <li>
+                  <img src={number1} alt="N/A" className="w-4 h-4 inline mt-[-47px]" />
+                </li>
+                <li>
+                  <img src={naIcon} alt="Tick" className="w-4 h-4 inline mt-[-58px]" />
+                </li>
+                <li>
+                  <img src={naIcon} alt="Number" className="w-4 h-4 inline mt-[-83px]" />
+                </li>
+                <li>
+                  <img src={naIcon} alt="N/A" className="w-4 h-4 inline mt-[-93px]" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
         {/* Desktop View - Only visible on medium screens and up */}
         <div className="hidden md:block w-full lg:w-full ml-[820px] mt-[40px]">
@@ -481,7 +541,7 @@ const Home = () => {
             </div>
 
             {/* Plan Columns - Desktop */}
-            {plans.map((plan, index) => (
+            {/* {plans.map((plan, index) => (
               <div
                 key={index}
                 className="text-black text-center mt-[-14px] w-[250px] min-h-[500px] flex flex-col"
@@ -501,7 +561,146 @@ const Home = () => {
                   })}
                 </ul>
               </div>
-            ))}
+            ))} */}
+
+            <div className="grid grid-cols-4 items-start pb-4">
+              {/* Feature Column */}
+
+              {/* Basic Plan */}
+              <div className="text-center w-27 ml-22 h-64 flex flex-col col-span-1">
+                <h3 className="relative top-[-18px] text-8xl font-semi-bold mb-2">
+                  Basic
+                </h3>
+                <ul className="space-y-10 flex-grow">
+                  <li>
+                    <img src={number4} alt="Number" className="w-10 h-10 inline mt-[-5px]" />
+                  </li>
+                  <li>
+                    <img src={number1} alt="Number" className="w-10 h-10 inline mt-[-16px]" />
+                  </li>
+                  <li>
+                    <img src={number0} alt="Number" className="w-10 h-10 inline mt-[-20px]" />
+                  </li>
+                  <li>
+                    <img src={number1} alt="Number" className="w-10 h-10 inline mt-[-20px]" />
+                  </li>
+                  <li>
+                    <img src={number0} alt="Number" className="w-10 h-10 inline mt-[-20px]"/>
+                  </li>
+                  <li>
+                    <img src={number3} alt="Number" className="w-10 h-10 inline mt-[-18px]" />
+                  </li>
+                  <li>
+                    <img src={tickIcon} alt="Number" className="w-10 h-10 inline mt-[-9px]" />
+                  </li>
+                  <li>
+                    <img src={tickIcon} alt="Number" className="w-10 h-10 inline mt-[-13px]" />
+                  </li>
+                </ul>
+              </div>
+
+              {/* Standard Plan */}
+              <div className="text-center w-126 ml-14 h-64 flex flex-col col-span-1">
+                <h3 className="relative top-[-18px] text-8xl font-semi-bold mb-2">
+                  Standard
+                </h3>
+                <ul className="space-y-10 flex-grow">
+                  <li>
+                    <img src={number6} alt="Number" className="w-10 h-10 inline mt-[-7px]" />
+                  </li>
+                  <li>
+                    <img src={number1} alt="Number" className="w-10 h-10 inline mt-[-13px]" />
+                  </li>
+                  <li>
+                    <img src={number1} alt="Tick" className="w-10 h-10 inline mt-[-18px]" />
+                  </li>
+                  <li>
+                    <img src={number1} alt="Number" className="w-10 h-10 inline mt-[-26px]" />
+                  </li>
+                  <li>
+                    <img src={number0} alt="N/A" className="w-10 h-10 inline mt-[-20px]" />
+                  </li>
+                  <li>
+                    <img src={number4} alt="Tick" className="w-10 h-10 inline mt-[-15px]" />
+                  </li>
+                  <li>
+                    <img src={tickIcon} alt="Number" className="w-10 h-10 inline mt-[-10px]" />
+                  </li>
+                  <li>
+                    <img src={tickIcon} alt="N/A" className="w-10 h-10 inline mt-[-10px]" />
+                  </li>
+                </ul>
+              </div>
+
+              {/* Premium Plan */}
+              <div className="text-center w-236 ml-8 h-64 flex flex-col col-span-1">
+                <h3 className="relative top-[-18px] text-8xl font-semi-bold mb-2">
+                  Premium
+                </h3>
+                <ul className="space-y-10 flex-grow">
+                  <li>
+                    <img src={number8} alt="Number" className="w-10 h-10 inline mt-[-7px]" />
+                  </li>
+                  <li>
+                    <img src={number2} alt="Number" className="w-10 h-10 inline mt-[-18px]" />
+                  </li>
+                  <li>
+                    <img src={number2} alt="Tick" className="w-10 h-10 inline mt-[-18px]" />
+                  </li>
+                  <li>
+                    <img src={number1} alt="Number" className="w-10 h-10 inline mt-[-20px]" />
+                  </li>
+                  <li>
+                    <img src={number1} alt="N/A" className="w-10 h-10 inline mt-[-10px]" />
+                  </li>
+                  <li>
+                    <img src={number5} alt="Tick" className="w-10 h-10 inline mt-[-25px]" />
+                  </li>
+                  <li>
+                    <img src={tickIcon} alt="Number" className="w-10 h-10 inline mt-[-8px]" />
+                  </li>
+                  <li>
+                    <img src={tickIcon} alt="N/A" className="w-10 h-10 inline mt-[-10px]" />
+                  </li>
+                </ul>
+              </div>
+
+              {/* Custom Plan */}
+              <div className="text-center w-340 ml-2 h-64 flex flex-col col-span-1">
+                <h3 className="relative top-[-18px] text-8xl font-semi-bold mb-2">
+                  Custom
+                </h3>
+                <ul className="space-y-10 flex-grow">
+                  <li>
+                    <img src={number8} alt="Number" className="w-10 h-10 inline mt-[-7px]" />
+                  </li>
+                  <li>
+                    <img src={number1} alt="Number" className="w-10 h-10 inline mt-[-13px]" />
+                  </li>
+                  <li>
+                    <img src={number1} alt="Tick" className="w-10 h-10 inline mt-[-18px]" />
+                  </li>
+                  <li>
+                    <img src={number1} alt="Number" className="w-10 h-10 inline mt-[-28px]" />
+                  </li>
+                  <li>
+                    <img src={number1} alt="N/A" className="w-10 h-10 inline mt-[-10px]" />
+                  </li>
+                  <li>
+                    <img src={naIcon} alt="Tick" className="w-10 h-10 inline mt-[-18px]" />
+                  </li>
+                  <li>
+                    <img src={naIcon} alt="Number" className="w-10 h-10 inline mt-[-13px]" />
+                  </li>
+                  <li>
+                    <img src={naIcon} alt="N/A" className="w-10 h-10 inline mt-[-10px]" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* //data */}
+
           </div>
         </div>
       </div>
@@ -515,9 +714,8 @@ const Home = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`w-full bg-transparent text-white text-lg font-semibold cursor-pointer p-2 md:p-4 ${
-                index >= 2 ? "md:hidden" : ""
-              }`}
+              className={`w-full bg-transparent text-white text-lg font-semibold cursor-pointer p-2 md:p-4 ${index >= 19 ? "md:hidden" : ""
+                }`}
             >
               <div
                 className="w-full md:w-[80%] mx-auto flex justify-between items-center text-xl md:text-4xl p-2 md:p-4 font-[Poppins]"

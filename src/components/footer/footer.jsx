@@ -16,7 +16,8 @@ const Footer = () => {
       </p>
       <div className="absolute bottom-0 translate-y-[5px] md:translate-y-[40px] lg:translate-y-[30px]">
         <Link
-          to="/apply"
+          to={`https://api.whatsapp.com/send?phone=971567257157&text=Hi, How are you? :)`}
+          // to="/apply"
           className="text-[#474CBA] ml-[8px] text-[12px] font-bold md:text-[15px] lg:text-[30px] cursor-pointer hover:text-gray-600"
         >
           Get In Touch
@@ -32,7 +33,8 @@ const Footer = () => {
     </p>
     <div className="mt-[-10px] ml-[-6px] md:mt-[-10px] lg:mt-[-10px] md:ml-[-100px] lg:ml-[-100px]">
       <Link
-        to="/apply"
+        to={`https://api.whatsapp.com/send?phone=971567257157&text=Hi, I want to apply for a job at Fooliz!`}
+        // to="/apply"
         className="text-[#474CBA] text-[12px]  font-bold md:text-[15px] lg:text-[30px] cursor-pointer hover:text-gray-600"
       >
         Apply here
@@ -42,13 +44,13 @@ const Footer = () => {
 
   <div className="flex flex-col text-[8px] ml-[90px] mt-[-99px] md:text-[14px] lg:text-[24px] text-[#474cba] font-extrabold leading-relaxed tracking-[-0.04em] font-[Poppins] text-center md:mt-[-220px] lg:mt-[-340px]">
     <div className="md:mt-[45px] lg:mt-[45px] mt-[-18px] mr-[10px]">
-      <p>Dubai, Lahore, wtv Road bt</p>
-      <p className=" md:mr-[20px] ml-[-22px] lg:mr-[50px]">Address, wtv, 43543</p>
+      <p>Business Bay, Dubai, UAE</p>
+      <p className=" md:mr-[20px] ml-[-42px] lg:mr-[85px]">PO BOX 00000</p>
     </div>
     <br />
     <div className="">
-      <p className="mr-[30px] md:mr-[40px] lg:mr-[70px]">Address, wtv, 43543</p>
-      <p className="mr-[30px] md:mr-[40px] lg:mr-[70px]">Address, wtv, 43543</p>
+      <p className="mr-[85px] md:mr-[40px] lg:mr-[245px]">Data</p>
+      <p className="mr-[85px] md:mr-[40px] lg:mr-[245px]">Data</p>
     </div>
 
      <div>
@@ -109,15 +111,15 @@ const Footer = () => {
 
     {/* Right Section: Social Media Icons */}
    <div className="flex items-center gap-2 md:gap-4 lg:gap-6 mr-1 md:mr-3 lg:mr-6">
-    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.instagram.com/fooliz" target="_blank" rel="noopener noreferrer">
       <FaInstagram className="text-black text-sm md:text-lg lg:text-2xl cursor-pointer hover:text-gray-600" />
     </a>
 
-    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.linkedin.com/in/fooliz" target="_blank" rel="noopener noreferrer">
       <FaLinkedin className="text-black text-sm md:text-lg lg:text-2xl cursor-pointer hover:text-gray-600" />
     </a>
 
-    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.facebook.com/fooliz" target="_blank" rel="noopener noreferrer">
       <FaFacebook className="text-black text-sm md:text-lg lg:text-2xl cursor-pointer hover:text-gray-600" />
     </a>
   </div>
