@@ -111,15 +111,15 @@ const Footer = () => {
 
     {/* Right Section: Social Media Icons */}
    <div className="flex items-center gap-2 md:gap-4 lg:gap-6 mr-1 md:mr-3 lg:mr-6">
-    <a href="https://www.instagram.com/fooliz" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.instagram.com/foolizstudio" target="_blank" rel="noopener noreferrer">
       <FaInstagram className="text-black text-sm md:text-lg lg:text-2xl cursor-pointer hover:text-gray-600" />
     </a>
 
-    <a href="https://www.linkedin.com/in/fooliz" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.linkedin.com/in/foolizstudio" target="_blank" rel="noopener noreferrer">
       <FaLinkedin className="text-black text-sm md:text-lg lg:text-2xl cursor-pointer hover:text-gray-600" />
     </a>
 
-    <a href="https://www.facebook.com/fooliz" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.facebook.com/foolizstudio" target="_blank" rel="noopener noreferrer">
       <FaFacebook className="text-black text-sm md:text-lg lg:text-2xl cursor-pointer hover:text-gray-600" />
     </a>
   </div>

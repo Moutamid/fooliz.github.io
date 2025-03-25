@@ -14,10 +14,22 @@ import Getintouch from "./pages/getintouch/getintouch";
 import Footer from './components/footer/footer';
 import './App.css';
 
+import { useEffect } from 'react'
+import faviconSrc from './assets/favicon.ico'
+
+
 export default function App() {
   // Since you're using HashRouter, you don't need to specify a basename
   // HashRouter uses the hash portion of the URL which is independent of the base path
   
+  // DISPLAYING FAVICON
+  useEffect(() => {
+    const link = document.querySelector("link[rel~='icon']")
+    if (link) {
+      link.href = faviconSrc
+    }
+  }, [])
+
   return (
     <Router>
       <Routes>

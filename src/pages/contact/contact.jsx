@@ -96,14 +96,14 @@ const ContactPage = () => {
         </p>
 
         <p className="text-black text-2xl font-bold md:mt-1 md:ml-2 w-full">
-          fooliz@gmail.com
+          hi@moutamid.com
         </p>
 
         <p className="text-black hidden md:block md:ml-2 text-2xl md:text-2xl break-words font-bold md:mt-1 leading-tight w-full">
-          Dubai, Business Bay,<br  />SBK-506, UAE
+          Business Bay, Dubai,<br/>UAE
         </p>
         <p className="text-black md:hidden text-xl  break-words font-bold md:mt-1 leading-tight w-full">
-          Dubai, Business Bay,<br  />SBK-506, UAE
+          Business Bay, Dubai,<br  /> UAE
         </p>
       </div>
 

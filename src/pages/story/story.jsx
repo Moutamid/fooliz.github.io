@@ -29,16 +29,7 @@ const ContactPage = () => {
 
           {/* Lorem Ipsum paragraph - Shown third on mobile */}
           <p className="text-gray-700 ml-[-4px] text-xl font-semi-bold mx-4 md:mx-8 lg:mx-10 max-w-full md:max-w-[80%] lg:max-w-[55%] leading-tight mb-8 md:mb-12 lg:mb-[100px] text-justify">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            onlet sheets containing Lorem Ipsum passages, and more recently with
-            desktop publishing software like Aldus PageMaker including versions
-            of Lorem Ipsum.
-
-            We started our mission with a vision to transform the industry.
-            we've remained committed to excellence and continuous improvement.
+          Fooliz emerged from a vision to revolutionize software development by combining innovative technology with personalized client experiences. Founded with a passion for creating transformative digital solutions, the company quickly distinguished itself by offering flexible, comprehensive development packages tailored to startups and established businesses alike. Our core philosophy centers on delivering high-quality, scalable software while maintaining transparent communication and adaptive work models. From mobile applications to complex enterprise systems, Fooliz aims to be more than just a development partner – we aspire to be a catalyst for our clients' technological growth and digital transformation.
           </p>
         </div>
 

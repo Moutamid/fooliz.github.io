@@ -7,59 +7,59 @@ import "./style.css";
 const ContactPage = () => {
   const testimonials = [
     {
-      name: "RIDER APP",
-      text: "Absolutely blown away by the app developed! It's like you read our minds. User-friendly, sleek design, and flawless performance. A game-changer for our business!",
+      name: "Holli Dov - USA",
+      text: "Quick delivery and turnaround time that was extremely helpful with a last-minute project that needed profound expertise to master. He came through with flying colors and helped our team over the finish line. Thanks so much!! We really appreciate it.",
       image:
-        "https://s3-alpha-sig.figma.com/img/983d/1c23/b1cb49125e6afb2afa495f719730af57?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=R3bRZ7-nAgIYBwig8Yr4PdEA6E3YDngVhpUbaeLL5WrFynud0g8iky5o1OMLZjNpsNeMM39525p3lSJcKj6HeGd5-XT~PTP7ceqdOqcsn9tY99hlc7hx1wKeBhBBykioYu4yoBMFb2tK9Bc~wOk8l0bCtVrJuVIvTXOWKgspwqpKaGOXotLSpQhjESoyptZ~ZsfP0L4DITsivKtC8xWDMv6qzVN1P4fXQ-1pHL~QJ5lW4rhs7rkTKBJa4Ne9Gol~gcZ7slcckEdX~g1ANBIHY2OvalLjNe5kqEyH3SpT3IAvkw~x~rKzvTlRzndpC7EKc5AQi0Glmoatz~DE4rU1Kg__",
+        "https://firebasestorage.googleapis.com/v0/b/foolee-inc.appspot.com/o/fooliz.-website-assets%2FWork_ID_Final.webp?alt=media&token=fecb5417-2c6f-4c8b-ba89-c7b5158ab4cc",
       bgColor: "#dee13e",
     },
     {
-      name: "TypeKing",
-      text: "Absolutely blown away by the app developed! It's like you read our minds. User-friendly, sleek design, and flawless performance. A game-changer for our business!",
+      name: "Hera Rex - Canada",
+      text: "They were very good to work with. He satisfied all the task requirements, and was able to delivery it ahead of schedule, defently exceeded expectations and look forward in working in other projects. He is very talented at what he does, and his communication is perfect.",
       image:
-        "https://s3-alpha-sig.figma.com/img/7583/57be/ae9594f1160471db992db1cf36ca3f46?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=mOmGXSlvFwEnhHA0TuxrSF-w6lKg3BdkFPJGdPxoYicdEnpD~wSE~YZP129lr9iEMWV2DQM992nl6cHeMV2RmTDbEtv5DVESb5uX5ukdsEAHn8oapeaocNC6~wmPsPFp-X8CYftLYjLc3RzJ3V8FCsVGh14HB6qbn0O0sE2qtpnyvcHaEa8yb-sRq8m42akE8xk-YG8q1yfPP~tpjLjiC8wrjycTIH3fyyn1k7eEXSJOHKl8BGaRMI4SqXS2aq9YnHc5dUJAJcqm4od6At4gHLgPNFAS~-woPPt1cutDUBK62uP9~Woc90J8xMqCm1ojfnXo1qUDSPy-jIHGJ-7NvQ__",
+        "https://firebasestorage.googleapis.com/v0/b/foolee-inc.appspot.com/o/fooliz.-website-assets%2F1f7bca4b-4dfe-4fc8-a36b-1756d3de0074.webp?alt=media&token=67130bc6-41bd-4738-98ee-6d21dda4372d",
       bgColor: "#5cba47",
     },
     {
-      name: "GBPLUS",
-      text: "Absolutely blown away by the app developed! It's like you read our minds. User-friendly, sleek design, and flawless performance. A game-changer for our business!",
+      name: "ArmStrong - USA",
+      text: "I recently had the pleasure of working with them, they developed an application for me, and I am highly impressed with their work! From start to finish, incredibly professional, responsive, and easy to work with. One of the things I appreciated most about him was his attention to detail. He took the time to understand my needs and goals for the application.",
       image:
-        "https://s3-alpha-sig.figma.com/img/9cc4/464c/2f27326011ba562898e108aa9522819c?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ISICWf-~48Sjl3A6MMVpHY75PsDbkBGho8nB6iaLnA4Uw9RW1avWHxw~kpkDZ0uM0XLwvdZ~3XVj4oR5nQkFGpdOj2qiVjuBZjzpESTOyluAp6aspYoCHpTFRlNg7Bq-l5VvzfmynwXS7MWOCBwqG~E9UrIwFr3cd2bmF4FKLfz-LzPMUW2~Rc6o4DDJiEZ4CW~JOICBlZCniZLk5mSOy9ApNXOPCk5jdB4qz1VyuiMf6fUv6svD5dD6wH~oPuEHsaVYFISsMMTTa6pQ1x5UwAUZbJTWbTlWKNRYdtMTiruoLEA1bsREdco1hpXLTj961U5aMQHiG4NAV0wpt4Xbfg__",
+        "https://firebasestorage.googleapis.com/v0/b/foolee-inc.appspot.com/o/fooliz.-website-assets%2F254209_1996841794503_1047210085_32208484_3612711_n.webp?alt=media&token=e02f6c2d-2735-496c-9f60-d95472932b09",
       bgColor: "#474cba",
     },
     {
-      name: "ANNOE",
-      text: "Absolutely blown away by the app developed! It's like you read our minds. User-friendly, sleek design, and flawless performance. A game-changer for our business!",
+      name: "Pascal - UK",
+      text: "Very good. Delivered the project on time, and were very polite and helped every time I had a question. Would def recommend them.",
       image:
-        "https://s3-alpha-sig.figma.com/img/a5bc/27e2/38474c3a8026069d17b3fde301968dd3?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=trkC7sa8Z45Fc9H9xnTFzvzxeck8dhr0Ewm4bCaeJeeupHa0LDZ6dQGOOnzkKMAx5l0F2ndLBVsmVFZsR3WGng8zzQQnep9~t5K27KuwcGsm0BHSy6jhzXP00oVLA4EPpFJWKfWGMkXKWbUHVoO-n4m60wK3NEmbrjN3flL0bIBQz1kLjuc6Fo8~8xN9ukDLcp5rGIyjRZBtw7QEYYsedrtaopRDC7mpXA4GgYf0wyq-uCH2Y0axnkC5kwuH5pKUHsgwIf3oDrspg2YMqqsOimn2qdOwUpEOl4Mwd3pWw-~nXBLQ53ygZ~2d-XufWBPGVYp~NxEapWun0iTGFt3jKg__",
+        "https://firebasestorage.googleapis.com/v0/b/foolee-inc.appspot.com/o/fooliz.-website-assets%2F673F2D55-E1FF-4235-A6CB-22C8A3E4C21C.webp?alt=media&token=6efe51ea-3b51-441c-a12d-67bc56df20db",
       bgColor: "#ba47ae",
     },
     {
-      name: "RIDER APP",
-      text: "Absolutely blown away by the app developed! It's like you read our minds. User-friendly, sleek design, and flawless performance. A game-changer for our business!",
+      name: "Waleed Zayed - UAE",
+      text: "5th project with them. Very nice and easy to communicate with person did the job as requested from first time. Beautifull app and easy to use GUI. Takes into consideration all parameters without even me mentioning anything would do all future apps with them",
       image:
-        "https://s3-alpha-sig.figma.com/img/983d/1c23/b1cb49125e6afb2afa495f719730af57?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=R3bRZ7-nAgIYBwig8Yr4PdEA6E3YDngVhpUbaeLL5WrFynud0g8iky5o1OMLZjNpsNeMM39525p3lSJcKj6HeGd5-XT~PTP7ceqdOqcsn9tY99hlc7hx1wKeBhBBykioYu4yoBMFb2tK9Bc~wOk8l0bCtVrJuVIvTXOWKgspwqpKaGOXotLSpQhjESoyptZ~ZsfP0L4DITsivKtC8xWDMv6qzVN1P4fXQ-1pHL~QJ5lW4rhs7rkTKBJa4Ne9Gol~gcZ7slcckEdX~g1ANBIHY2OvalLjNe5kqEyH3SpT3IAvkw~x~rKzvTlRzndpC7EKc5AQi0Glmoatz~DE4rU1Kg__",
+        "https://firebasestorage.googleapis.com/v0/b/foolee-inc.appspot.com/o/fooliz.-website-assets%2F91ef5a66-c5bd-45b3-8bd8-9f0d56752e0a.webp?alt=media&token=789e2c16-e877-489a-8a5c-29d8dea13ee1",
       bgColor: "#dee13e",
     },
     {
-      name: "RIDER APP",
-      text: "Absolutely blown away by the app developed! It's like you read our minds. User-friendly, sleek design, and flawless performance. A game-changer for our business!",
+      name: "Igor Bau - Switzerland",
+      text: "Professional app programmers. We are very satisfied with the work and are happy to recommend them. They delivered perfect work in just a few days under time pressure. We are very grateful.",
       image:
-        "https://s3-alpha-sig.figma.com/img/983d/1c23/b1cb49125e6afb2afa495f719730af57?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=R3bRZ7-nAgIYBwig8Yr4PdEA6E3YDngVhpUbaeLL5WrFynud0g8iky5o1OMLZjNpsNeMM39525p3lSJcKj6HeGd5-XT~PTP7ceqdOqcsn9tY99hlc7hx1wKeBhBBykioYu4yoBMFb2tK9Bc~wOk8l0bCtVrJuVIvTXOWKgspwqpKaGOXotLSpQhjESoyptZ~ZsfP0L4DITsivKtC8xWDMv6qzVN1P4fXQ-1pHL~QJ5lW4rhs7rkTKBJa4Ne9Gol~gcZ7slcckEdX~g1ANBIHY2OvalLjNe5kqEyH3SpT3IAvkw~x~rKzvTlRzndpC7EKc5AQi0Glmoatz~DE4rU1Kg__",
+        "https://firebasestorage.googleapis.com/v0/b/foolee-inc.appspot.com/o/fooliz.-website-assets%2Fcff9df35-6f31-4d12-8721-d6347cf059e3.webp?alt=media&token=790251e3-5e43-47b6-92a0-c28c9a12def7",
       bgColor: "#dee13e",
     },
     {
-      name: "RIDER APP",
-      text: "Absolutely blown away by the app developed! It's like you read our minds. User-friendly, sleek design, and flawless performance. A game-changer for our business!",
+      name: "Daniel Yakun - Kenya",
+      text: "Absolutely fantastic work. They delivered a very nice app with good structured code which was very easy to read. They resolved all the bugs and even accepted my additional requests later on. This is a true machine :-) Definitely my man from on again!",
       image:
-        "https://s3-alpha-sig.figma.com/img/983d/1c23/b1cb49125e6afb2afa495f719730af57?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=R3bRZ7-nAgIYBwig8Yr4PdEA6E3YDngVhpUbaeLL5WrFynud0g8iky5o1OMLZjNpsNeMM39525p3lSJcKj6HeGd5-XT~PTP7ceqdOqcsn9tY99hlc7hx1wKeBhBBykioYu4yoBMFb2tK9Bc~wOk8l0bCtVrJuVIvTXOWKgspwqpKaGOXotLSpQhjESoyptZ~ZsfP0L4DITsivKtC8xWDMv6qzVN1P4fXQ-1pHL~QJ5lW4rhs7rkTKBJa4Ne9Gol~gcZ7slcckEdX~g1ANBIHY2OvalLjNe5kqEyH3SpT3IAvkw~x~rKzvTlRzndpC7EKc5AQi0Glmoatz~DE4rU1Kg__",
+        "https://firebasestorage.googleapis.com/v0/b/foolee-inc.appspot.com/o/fooliz.-website-assets%2Fd3495dd1-94c6-4180-a430-98477a3be588.webp?alt=media&token=b91899c0-2640-40c2-b0bf-372608dabc04",
       bgColor: "#dee13e",
     },
     {
-      name: "RIDER APP",
-      text: "Absolutely blown away by the app developed! It's like you read our minds. User-friendly, sleek design, and flawless performance. A game-changer for our business!",
+      name: "Dave - UK",
+      text: "They recently helped me with an app and I was happy with the work. They completed this app for me quickly and exactly as I described. The source code is clean and easy to read. Fantastic people to work with and great communication.",
       image:
-        "https://s3-alpha-sig.figma.com/img/983d/1c23/b1cb49125e6afb2afa495f719730af57?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=R3bRZ7-nAgIYBwig8Yr4PdEA6E3YDngVhpUbaeLL5WrFynud0g8iky5o1OMLZjNpsNeMM39525p3lSJcKj6HeGd5-XT~PTP7ceqdOqcsn9tY99hlc7hx1wKeBhBBykioYu4yoBMFb2tK9Bc~wOk8l0bCtVrJuVIvTXOWKgspwqpKaGOXotLSpQhjESoyptZ~ZsfP0L4DITsivKtC8xWDMv6qzVN1P4fXQ-1pHL~QJ5lW4rhs7rkTKBJa4Ne9Gol~gcZ7slcckEdX~g1ANBIHY2OvalLjNe5kqEyH3SpT3IAvkw~x~rKzvTlRzndpC7EKc5AQi0Glmoatz~DE4rU1Kg__",
+        "https://firebasestorage.googleapis.com/v0/b/foolee-inc.appspot.com/o/fooliz.-website-assets%2Feb9e8100-cded-434d-bbe5-0177bbb48913.webp?alt=media&token=ecea24cd-7ace-4dbc-bc45-bba7ee851330",
       bgColor: "#dee13e",
     },
   ];
