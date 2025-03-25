@@ -192,7 +192,7 @@ const Home = () => {
     },
   ];
 
-  const features = ["Ayein", "Ayein", "Ayein", "Ayein", "Ayein"];
+  const features = ["Daily Working Hours", "Ayein", "Ayein", "Ayein", "Ayein"];
   const plans = ["Basic", "Standard", "Premium", "Custom"];
 
   // Render check icons for comparison table
