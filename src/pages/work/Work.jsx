@@ -1,24 +1,27 @@
 import React from "react";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
-import vectorIcon from "../../assets/Group 55.svg";
 import brokenImage from "../../assets/brokenimage.png";
 import { ClipLoader } from 'react-spinners';
 
 import { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 
-import Mobile1 from "../../assets/mobile1.svg";
-import Mobile2 from "../../assets/mobile2.svg";
-import Pic2 from "../../assets/2.svg";
-import Pic21 from "../../assets/2.1.svg";
-import Pic3 from "../../assets/3.svg";
-import Pic4 from "../../assets/4.svg";
-import Pic5 from "../../assets/5.svg";
-import Pic6 from "../../assets/6.svg";
-import Pic7 from "../../assets/7.svg";
-import Pic8 from "../../assets/8.svg";
-import Pic9 from "../../assets/9.svg";
+import IC_TALKTOGATHER_1 from "../../assets/ic_talkTogather_1.svg";
+import IC_TALKTOGATHER_2 from "../../assets/ic_talkTogather_2.svg";
+import IC_AIRBNB_1 from "../../assets/ic_airbnb_1.jpg";
+import IC_CALENDARTASK_1 from "../../assets/ic_calendartask_1.jpg";
+import IC_CHAMA_1 from "../../assets/ic_chama_1.jpg";
+import IC_DAIPTV_1 from "../../assets/ic_daiptv_1.jpg";
+import IC_INTUITIONBUILDER_1 from "../../assets/ic_intuitionbuilder_1.jpg";
+import IC_LONGSTATUSPRO_1 from "../../assets/ic_longstatuspro_1.jpg";
+import IC_MISSCADDIE_1 from "../../assets/ic_misscaddie_1.jpg";
+import IC_QRSCANNER_1 from "../../assets/ic_qrscanner_1.jpg";
+import IC_ROUTINEFLOW_1 from "../../assets/ic_routineflow_1.jpg";
+import IC_TRIP4PET_1 from "../../assets/ic_trip4pet_1.jpg";
+import IC_TYPEKING_1 from "../../assets/ic_typeking_1.jpg";
+import IC_WHATZBOOST_1 from "../../assets/ic_whatzboost_1.jpg";
+
 import { Link } from 'react-router-dom';
 
 const ContactPage = () => {
@@ -31,80 +34,128 @@ const ContactPage = () => {
   const filterSectionRef = useRef(null);
   const contentSectionRef = useRef(null);
   
+  // create a category constant of all values in imageData array for reuse in the imageData array
+  const CATEGORY_ALL = "All";
+  const CATEGORY_APP = "App";
+  const CATEGORY_WEB = "Web";
+  const CATEGORY_UI_UX = "UI/UX";
+  const CATEGORY_CREATIVE = "Creative";
+  
+  // { 
+  //   id: 2, 
+  //   primary: Pic2, 
+  //   secondary: Mobile2, 
+  //   text: "Multi Search Engine", 
+  //   icon: Pic21, 
+  //   link: "secondaryimg",
+  //   category: CATEGORY_WEB
+  // },
+
   // Add category property to each item
   const imageData = [
     { 
       id: 1, 
-      primary: Mobile1, 
-      secondary: Mobile2, 
-      text: "Talk To Gather", 
-      link: "imgtogether",
-      category: "App" 
+      primary: IC_TALKTOGATHER_2, 
+      secondary: IC_TALKTOGATHER_2, 
+      text: "Talk ToGather", 
+      link: "TalkTogather",
+      category: CATEGORY_APP
     },
     { 
       id: 2, 
-      primary: Pic2, 
-      secondary: Mobile2, 
-      text: "Multi Search Engine", 
-      icon: Pic21, 
-      link: "secondaryimg",
-      category: "Web" 
+      primary: IC_AIRBNB_1, 
+      secondary: IC_AIRBNB_1, 
+      text: "Airbnb", 
+      link: "Airbnb",
+      category: CATEGORY_APP
     },
     { 
       id: 3, 
-      primary: Pic3, 
-      text: "Image 3",
-      secondary: Mobile2, 
-      link: "secondaryimg",
-      category: "UI/UX" 
+      primary: IC_CALENDARTASK_1, 
+      secondary: IC_CALENDARTASK_1, 
+      text: "Calendar Task", 
+      link: "CalendarTask",
+      category: CATEGORY_APP
     },
     { 
       id: 4, 
-      primary: Pic4, 
-      text: "Image 4",
-      secondary: Mobile2, 
-      link: "secondaryimg",
-      category: "Creative" 
+      primary: IC_CHAMA_1, 
+      secondary: IC_CHAMA_1, 
+      text: "Chama", 
+      link: "Chama",
+      category: CATEGORY_APP
     },
     { 
       id: 5, 
-      primary: Pic5, 
-      text: "Image 5",
-      secondary: Mobile2,  
-      link: "secondaryimg",
-      category: "App" 
+      primary: IC_DAIPTV_1, 
+      secondary: IC_DAIPTV_1, 
+      text: "Da Iptv", 
+      link: "Daiptv",
+      category: CATEGORY_APP
     },
     { 
       id: 6, 
-      primary: Pic6, 
-      text: "Image 6",
-      secondary: Mobile2, 
-      link: "secondaryimg",
-      category: "Web" 
+      primary: IC_INTUITIONBUILDER_1, 
+      secondary: IC_INTUITIONBUILDER_1, 
+      text: "Intuition Builder", 
+      link: "IntuitionBuilder",
+      category: CATEGORY_APP
     },
     { 
       id: 7, 
-      primary: Pic7, 
-      text: "Image 7",
-      secondary: Mobile2, 
-      link: "secondaryimg",
-      category: "UI/UX" 
+      primary: IC_LONGSTATUSPRO_1, 
+      secondary: IC_LONGSTATUSPRO_1, 
+      text: "Long Status Pro", 
+      link: "LongStatusPro",
+      category: CATEGORY_APP
     },
     { 
       id: 8, 
-      primary: Pic8, 
-      text: "Image 8",
-      secondary: Mobile2, 
-      link: "secondaryimg",
-      category: "Creative" 
+      primary: IC_MISSCADDIE_1, 
+      secondary: IC_MISSCADDIE_1, 
+      text: "Miss Caddie", 
+      link: "MissCaddie",
+      category: CATEGORY_APP
     },
     { 
       id: 9, 
-      primary: Pic9, 
-      text: "Image 9",
-      secondary: Mobile2,  
-      link: "secondaryimg",
-      category: "App" 
+      primary: IC_QRSCANNER_1, 
+      secondary: IC_QRSCANNER_1, 
+      text: "QR Scanner", 
+      link: "QrScanner",
+      category: CATEGORY_APP
+    },
+    { 
+      id: 10, 
+      primary: IC_ROUTINEFLOW_1, 
+      secondary: IC_ROUTINEFLOW_1, 
+      text: "Routine Flow", 
+      link: "RoutineFlow",
+      category: CATEGORY_APP
+    },
+    { 
+      id: 11, 
+      primary: IC_TRIP4PET_1, 
+      secondary: IC_TRIP4PET_1, 
+      text: "Trip4Pet", 
+      link: "Trip4Pet",
+      category: CATEGORY_APP
+    },
+    { 
+      id: 12, 
+      primary: IC_TYPEKING_1, 
+      secondary: IC_TYPEKING_1, 
+      text: "Type King", 
+      link: "TypeKing",
+      category: CATEGORY_APP
+    },
+    { 
+      id: 13, 
+      primary: IC_WHATZBOOST_1, 
+      secondary: IC_WHATZBOOST_1, 
+      text: "WhatzBoost", 
+      link: "WhatzBoost",
+      category: CATEGORY_APP
     },
   ];
   
@@ -112,7 +163,7 @@ const ContactPage = () => {
   const location = useLocation();
   
   // State for active filter
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState(CATEGORY_ALL);
   
   // Function to scroll to content section with smooth behavior
   const scrollToContent = () => {
@@ -133,7 +184,7 @@ const ContactPage = () => {
     const categoryParam = queryParams.get('category');
     
     // Set active filter if category parameter exists and is valid
-    if (categoryParam && ["All", "App", "Web", "UI/UX", "Creative"].includes(categoryParam)) {
+    if (categoryParam && [CATEGORY_ALL, CATEGORY_APP, CATEGORY_WEB, CATEGORY_UI_UX, CATEGORY_CREATIVE].includes(categoryParam)) {
       setActiveFilter(categoryParam);
       
       // Scroll to the content section after state update
@@ -148,7 +199,7 @@ const ContactPage = () => {
   useEffect(() => {
     // Update URL when filter changes without full page reload
     const url = new URL(window.location);
-    if (activeFilter === "All") {
+    if (activeFilter === CATEGORY_ALL) {
       url.searchParams.delete('category');
     } else {
       url.searchParams.set('category', activeFilter);
@@ -167,7 +218,7 @@ const ContactPage = () => {
   
   // Get filtered images based on active filter
   const getFilteredImages = () => {
-    if (activeFilter === "All") {
+    if (activeFilter === CATEGORY_ALL) {
       return imageData;
     }
     return imageData.filter(item => item.category === activeFilter);
@@ -205,32 +256,32 @@ const ContactPage = () => {
           <p className="font-poppins font-normal text-lg md:text-[25px] leading-[37.5px] text-black">
             Filter by:
             <span 
-              className={`ml-2 md:ml-4 cursor-pointer hover:underline ${activeFilter === "All" ? "underline font-semibold" : ""}`}
-              onClick={() => handleFilterClick("All")}
+              className={`ml-2 md:ml-4 cursor-pointer hover:underline ${activeFilter === CATEGORY_ALL ? "underline font-semibold" : ""}`}
+              onClick={() => handleFilterClick(CATEGORY_ALL)}
             >
               All
             </span>
             <span 
-              className={`ml-2 md:ml-4 cursor-pointer hover:underline ${activeFilter === "App" ? "underline font-semibold" : ""}`}
-              onClick={() => handleFilterClick("App")}
+              className={`ml-2 md:ml-4 cursor-pointer hover:underline ${activeFilter === CATEGORY_APP ? "underline font-semibold" : ""}`}
+              onClick={() => handleFilterClick(CATEGORY_APP)}
             >
               App
             </span>
             <span 
-              className={`ml-2 md:ml-4 cursor-pointer hover:underline ${activeFilter === "Web" ? "underline font-semibold" : ""}`}
-              onClick={() => handleFilterClick("Web")}
+              className={`ml-2 md:ml-4 cursor-pointer hover:underline ${activeFilter === CATEGORY_WEB ? "underline font-semibold" : ""}`}
+              onClick={() => handleFilterClick(CATEGORY_WEB)}
             >
               Web
             </span>
             <span 
-              className={`ml-2 md:ml-4 cursor-pointer hover:underline ${activeFilter === "UI/UX" ? "underline font-semibold" : ""}`}
-              onClick={() => handleFilterClick("UI/UX")}
+              className={`ml-2 md:ml-4 cursor-pointer hover:underline ${activeFilter === CATEGORY_UI_UX ? "underline font-semibold" : ""}`}
+              onClick={() => handleFilterClick(CATEGORY_UI_UX)}
             >
               UI/UX
             </span>
             <span 
-              className={`ml-2 md:ml-4 cursor-pointer hover:underline ${activeFilter === "Creative" ? "underline font-semibold" : ""}`}
-              onClick={() => handleFilterClick("Creative")}
+              className={`ml-2 md:ml-4 cursor-pointer hover:underline ${activeFilter === CATEGORY_CREATIVE ? "underline font-semibold" : ""}`}
+              onClick={() => handleFilterClick(CATEGORY_CREATIVE)}
             >
               Creative
             </span>

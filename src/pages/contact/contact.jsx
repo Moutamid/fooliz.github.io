@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
-import vectorIcon from "../../assets/Group 55.svg";
+import arrowIcon from "../../assets/arrow.svg";
 import RadioGif from "../../assets/radio.gif";
 import { database } from "../../firebase"; // Import your Firebase Realtime Database configuration
 import { ref, set, push, serverTimestamp } from "firebase/database";
@@ -77,7 +77,7 @@ const ContactPage = () => {
 
   <Link to="/home" className="md:block hidden">
     <img
-      src={vectorIcon}
+      src={arrowIcon}
       alt="Decoration"
       className="fixed top-6 right-6 w-10 h-10 cursor-pointer"
     />
@@ -111,8 +111,8 @@ const ContactPage = () => {
       <div className="flex justify-center items-center w-full ml-[45px] md:ml-[0px] mt-[20px] md:w-full mb-4 md:pb-6">
   <img
     className="w-60 h-[200px] md:w-64 md:h-[350px] lg:w-80 lg:h-[500px] md:mt-16 object-contain"
-    src="https://s3-alpha-sig.figma.com/img/5092/9fd8/cf65f91df9f176a93f556878108115f9?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=KY92W7nzsxH3hnnf0DSKksxmBAcip6ngnhtH~-NAKi9ch4lHcu2IwiM4fPJOnAfEFpzayqveoda~CKTc13X9Sv3TXw65Fg74A0yIm9CsIuvyH37trAHF-OY6zg~YYnowS4UzcK7IHK-jTpYH67~bkJOAI33SUnErn2thMvNzi0tU9BMUgo2EeJZn2W1Stevp7V33Lk3Lr0qIMkqn9NaiTQidFNJ8ps4xapz3bKDWPODs9WwrSMZzp-UDpFmI3xmbHLNwwUM-Fq~-m-Aa0LBuJfXfIhX6dfDVvTXCobza~K9qGCzvLFey7YCphJ1JTNAVepU8dQ~QyvcjZB6u3Gtbfw__"
-    alt={RadioGif}
+    src={RadioGif}
+    alt="radio image"
   />
 </div>
 

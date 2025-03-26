@@ -1,5 +1,5 @@
 import React from "react";
-import frameLogo from "../../assets/Frame.svg"; // Adjust path if needed
+import frameLogo from "../../assets/fooliz-logo.svg"; // Adjust path if needed
 import { Link } from 'react-router-dom';
 
 

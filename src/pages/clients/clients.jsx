@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
-import vectorIcon from "../../assets/Group 55.svg";
+import arrowIcon from "../../assets/arrow.svg";
 import "./style.css";
 
 const ContactPage = () => {
@@ -217,7 +217,7 @@ const ContactPage = () => {
 
       <a href="home">
         <img
-          src={vectorIcon}
+          src={arrowIcon}
           alt="Decoration"
           className="fixed top-6 right-6 w-10 h-10 cursor-pointer"
         />

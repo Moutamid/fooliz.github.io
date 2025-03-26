@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../components/header/header";
-import Rectangle from "../../assets/Rectangle 44.svg";
+import Rectangle from "../../assets/yellow-oval.svg";
 import Girl from "../../assets/running-girl.gif";
 import { Link } from 'react-router-dom';
 const Home = ({ 

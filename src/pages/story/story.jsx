@@ -1,9 +1,6 @@
 import React from "react";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
-import V1 from "../../assets/Vector 1.svg";
-import V2 from "../../assets/Vector 2.svg";
-import V3 from "../../assets/Vector 3.svg";
 import StoryImg from "../../assets/story.png";
 import { Link } from 'react-router-dom';
 const ContactPage = () => {

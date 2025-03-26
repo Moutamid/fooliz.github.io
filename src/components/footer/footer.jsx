@@ -1,6 +1,6 @@
 import React from "react";
 import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
-import frameLogo from "../../assets/Frame.svg"; // Adjust path if needed
+import frameLogo from "../../assets/fooliz-logo.svg"; // Adjust path if needed
 import Bhaloo from "../../assets/bhaloo.gif"; // Adjust path if needed
 import { Link } from 'react-router-dom';
 

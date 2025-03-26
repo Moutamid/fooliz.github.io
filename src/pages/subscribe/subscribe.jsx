@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import { FaChevronDown, FaChevronUp, FaCheck, FaTimes } from "react-icons/fa";
-import vectorIcon from "../../assets/Vector.svg";
-import tickIcon from "../../assets/Vector.svg";
+import tickIcon from "../../assets/ic_tick.svg";
 import naIcon from "../../assets/na.svg";
 
 import number0 from "../../assets/number0.svg";
@@ -208,7 +207,7 @@ const Home = () => {
 
   // Render check icons for comparison table
   const renderCheckIcon = () => (
-    <img src={vectorIcon} alt="Checkmark" className="w-10 h-10" />
+    <img src={tickIcon} alt="Checkmark" className="w-10 h-10" />
   );
 
   return (
@@ -550,7 +549,7 @@ const Home = () => {
                 <ul className="space-y-6 flex-grow">
                   {features.map((_, idx) => {
                     // Cycle through the icons sequentially
-                    const icons = [vectorIcon, naIcon, tickIcon];
+                    const icons = [tickIcon, naIcon, tickIcon];
                     const icon = icons[idx % icons.length];
 
                     return (
